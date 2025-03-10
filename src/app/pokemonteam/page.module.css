@@ -1,0 +1,88 @@
+.pokemonImageContainer {
+    position: relative;
+    width: 96px;
+    height: 96px;
+}
+
+.pokemonBackImageContainer {
+    position: relative;
+    width: 96px;
+    height: 96px;
+}
+
+.pokemonImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pokemonBackImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pokemonImageShiny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pokemonBackImageShiny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pokemonImageContainer:hover .pokemonImage {
+    opacity: 0;
+}
+
+.pokemonImageContainer:hover .pokemonImageShiny {
+    opacity: 1;
+    animation: sparkles 1s forwards;
+}
+
+.pokemonBackImageContainer:hover .pokemonBackImage {
+    opacity: 0;
+}
+
+.pokemonBackImageContainer:hover .pokemonBackImageShiny {
+    opacity: 1;
+    animation: sparkles 1s forwards;
+}
+
+@keyframes sparkles {
+    0% {
+        box-shadow: 0 0 3px 3px gold;
+    }
+    100% {
+        box-shadow: 0 0 0 0 gold;
+    }
+}
+
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('../../../public/Pokemon_Solid.ttf');
+
+    font-family: 'PokemonHollow';
+    src: url('../../../public/Pokemon_Hollow.ttf');
+}
+
+.pokemonTitle {
+    font-family: 'PokemonSolid';
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.pokemonName {
+    font-family: 'PokemonHollow';
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}

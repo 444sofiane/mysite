@@ -1,0 +1,11 @@
+.heart {
+    position: relative;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    clip-path: path("M50 17.7c-13.12-22.51-50-15.94-50 12.27 0 19.42 23.21 39.28 50 65.87 26.79-26.59 50-46.45 50-65.87 0-28.3-36.98-34.61-50-12.27z");
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    overflow: hidden;
+}
