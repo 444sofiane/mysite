@@ -68,9 +68,11 @@ export default function Home() {
                 Pokémon Team
               </button>
             </Link>
-            <button className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors">
-              In Work
-            </button>
+            <Link href="/evemarket">
+              <button className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors">
+                EVE Online Market
+              </button>
+            </Link>
             <button className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors">
               In Work
             </button>
